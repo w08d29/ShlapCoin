@@ -1,0 +1,145 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+	font-family: "Freckle Face", system-ui;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 22px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.container.screen_1,
+.container.screen_2 {
+	display: flex;
+	flex-direction: column;
+	align-items: Center;
+	justify-content: Center;
+}
+
+.container.screen_1 img,
+.container.screen_2 img {
+	width: 350px;
+}
+
+
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #e74c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 0;
+}
+
+.welcome-section {
+    background-color: #fff;
+}
+
+.roadmap-section {
+    background-color: #fff;
+}
+
+.why-section {
+    background-color: #000;
+}
+
+.container.screen_2 h2{
+	color: #fff!important;
+}
+
+.container.screen_2{
+	color: #fff!important;
+}
+
+/* Roadmap Styles */
+.roadmap {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 20px; /* Space between items */
+}
+
+.phase {
+    background-color: #e67e22;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 300px;
+    flex: 1 1 250px; /* Allow flexible width and maintain a minimum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5rem; /* Adjust heading sizes */
+    }
+
+    .cta-btn {
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    .roadmap {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+    }
+
+    .phase {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 1.2rem; /* Further adjust heading sizes */
+    }
+
+    .cta-btn {
+        padding: 8px 15px; /* Further adjust button padding */
+    }
+}
